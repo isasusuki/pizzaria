@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva de Evento | Susuki Pizzaria</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      color: #b30000;
+    }
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #b30000;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      padding: 10px;
+      margin-top: 5px;
+      border: 2px solid #b30000;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #b30000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #990000;
+    }
+    footer {
+      background-color: #b30000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Solicitação de Reserva</h1>
+    <p>Garanta seu espaço para eventos na Susuki Pizzaria</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pedidos.html">Pedidos</a>
+    <a href="rodizio.html">Rodízios</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="cardapio.html">Cardápio</a>
+  </nav>
+
+  <section>
+    <form action="#" method="post">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="data">Data do evento:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="horario">Horário desejado:</label>
+      <select id="horario" name="horario" required>
+        <option value="">Selecione</option>
+        <option value="18h às 23h">18h às 23h</option>
+        <option value="16h às 00h">16h às 00h</option>
+      </select>
+
+      <label for="tipo">Tipo de evento:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option value="Aniversário">Aniversário</option>
+        <option value="Confraternização">Confraternização</option>
+        <option value="Corporativo">Corporativo</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+      <label for="mensagem">Informações adicionais:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Número de convidados, decoração desejada, etc."></textarea>
+
+      <button type="submit">Enviar Solicitação</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Susuki Pizzaria — Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
