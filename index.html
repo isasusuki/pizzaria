@@ -10,7 +10,7 @@
       background-color: #fff;
       margin: 0;
       padding: 0;
-      color: #d31717;
+      color: #b30000;
     }
     header {
       text-align: center;
@@ -21,63 +21,124 @@
       height: auto;
     }
     nav {
-      background-color: #be0c0c;
+      background-color: #f2f2f2;
       padding: 15px;
       text-align: center;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #dfcbcb;
+      color: #b30000;
       font-weight: bold;
       font-size: 16px;
     }
-    section {
-      padding: 20px;
+    .hero {
+      background-color: #ffe6e6;
       text-align: center;
+      padding: 40px 20px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
     .btn-cardapio {
       display: inline-block;
-      margin-top: 20px;
       padding: 12px 24px;
-      background-color: #d4cbcb;
-      color: rgb(219, 19, 19);
+      background-color: #b30000;
+      color: white;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+    }
+    .sobre, .servicos {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .servico {
+      border: 2px solid #b30000;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    .servico h3 {
+      margin-top: 10px;
     }
     footer {
       background-color: #b30000;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 20px;
       margin-top: 30px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- Substitua 'logo.png' pelo nome do seu arquivo de logo -->
-    <img src="pizza.png" alt="Logo Susuki Pizzaria">
+    <img src="logo.png" alt="Logo Susuki Pizzaria">
   </header>
 
   <nav>
     <a href="pedidos.html">Pedidos</a>
     <a href="rodizio.html">Rodízios</a>
     <a href="eventos.html">Eventos</a>
-    <a href="galeria.html"> Galeria</a>
+    <a href="galeria.html">Galeria</a>
     <a href="cardapio.html">Cardápio</a>
   </nav>
 
-  <section>
-    <h2>Bem-vindo à Susuki Pizzaria</h2>
-    <p>Desde 2005, somos referência em sabor, tradição e ambiente acolhedor em Curitiba. Oferecemos pizzas artesanais, rodízios incríveis e espaço para eventos especiais.</p>
+  <section class="hero">
+    <h1>Bem-vindo à Susuki Pizzaria</h1>
+    <p>Desde 2005, somos referência em sabor, tradição e ambiente acolhedor em Curitiba.</p>
     <a href="cardapio.html" class="btn-cardapio">Ver Cardápio</a>
+  </section>
+
+  <section class="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Fundada por apaixonados por pizza, a Susuki Pizzaria nasceu com o propósito de unir ingredientes de qualidade, atendimento caloroso e um espaço ideal para reunir amigos e família. Nossa massa é artesanal e nossos sabores são pensados para agradar todos os paladares.</p>
+  </section>
+
+  <section class="servicos">
+    <div class="servico">
+      <h3>🍕 Rodízio</h3>
+      <p>Sabores ilimitados servidos à mesa, com opções salgadas e doces.</p>
+    </div>
+    <div class="servico">
+      <h3>🎉 Eventos</h3>
+      <p>Espaço reservado para festas, confraternizações e encontros especiais.</p>
+    </div>
+    <div class="servico">
+      <h3>📦 Delivery</h3>
+      <p>Peça online e receba em casa com rapidez e qualidade.</p>
+    </div>
+    <div class="servico">
+      <h3>📸 Galeria</h3>
+      <p>Veja fotos do nosso ambiente e dos momentos que já vivemos juntos.</p>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Susuki Pizzaria — Todos os direitos reservados</p>
+    <div class="social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+    </div>
   </footer>
 
 </body>
